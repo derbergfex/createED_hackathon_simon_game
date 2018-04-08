@@ -89,7 +89,7 @@ void loop ()
             // Set the round number to zero so you start on the first round.
             roundNum = 0;
             delay (1000);
-            // Set gameState to 1. 
+            // Go to playing state 
             gameState = 1;
             turnOff();
             // Indicate that first round begins
@@ -143,7 +143,8 @@ void loop ()
     } 
 }
 
-// pre_game
+// Before game is started
+// Flick between lights before a button is pressed
 void pre_game()
 {
   // Check if enough time has elapsed between leds lighting up.
@@ -254,8 +255,7 @@ void gamePlay()
           // Incorrect input
           Serial.println("You Lose!");
   
-          // You lost :(
-          // Set gameState to 3 to run losing function
+          // Enter losing state
           gameState = 3;
           return;
         }
@@ -482,7 +482,7 @@ void winDisplay()
 
 void winning_sound(void)
 {
-  // Tone (pin number, frequency - I looked this up online to find the frequency for the notes I wanted, duration of tune)
+  // Play winning celebration
   Serial.println("buzzer1");
   tone(buzzer, 294, 250);
   delay(200);

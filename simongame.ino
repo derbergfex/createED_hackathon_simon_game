@@ -138,7 +138,7 @@ void loop ()
       // Delay briefly before running pre_game.
       delay (1000);
       turnOff();
-      // Reset gameState to zero to call pre_game.
+      // Go back to the initial state
       gameState = 0;
     } 
 }
@@ -211,7 +211,7 @@ void gamePlay()
     for (int r = 0; r < NUMBERTOWIN; r++)
     {
 
-      // Update screen unless it's the first round (where screen updated on start og game)
+      // Update screen unless it's the first round (where screen updated on start of game)
       if (r != 0) {
         turnOff();
         displayDigit(roundNum + 1);

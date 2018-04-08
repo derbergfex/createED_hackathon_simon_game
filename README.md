@@ -7,8 +7,8 @@ I have implemented an online version of the game last Christmas, using basic Jav
 The way the game works is that the user is given a series of buttons and a counter. Each time the user inputs a series of button presses correctly, they can see the same series of button presses but with an additional step. There's also a sound associated with each button press. The user is also notified in case they press the wrong button, then they are notified that they have done so, and the game restarts at a new random series of button presses, from stage 1. The user can win the game by getting a series of 9 (we reduce it to 3 in the presentation, for the sake of time) steps correct. Once the game is won, a series of funky lights and sounds play, then the game resets.
 
 ## How I built it
-After a little research, we came to the decision of implementing the game using an Adruino as we have seen plenty of online support for it. Only two members of the group, including myself, had a little bit of experience with C. So, suffice to say, it was a long process to implement it in the Adruino language (which's very similar to C++). 
-We built it using a large breadboard, a switch button, four push buttons, four LEDs, a speaker, an Arduino Uno, and a bunch of jumper wires.
+After a little research, we came to the decision of implementing the game using an Arduino as we have seen plenty of online support for it. Only two members of the group, including myself, had a little bit of experience with C. So, suffice to say, it was a long process to implement it in the Arduino language (which's very similar to C++). 
+We built it using a large breadboard, a switch button, four push buttons, four LEDs, a speaker, an Adruino Uno, and a bunch of jumper wires.
 
 ## Challenges I ran into
 Our main challenge at the beginning was to understand how the circuit would work. It was helpful going to the electronic workshop, which gave us a head start. It took us quite a lot of time to make the breadboard (and the circuit, overall) look as humane as possible.
@@ -22,6 +22,9 @@ We are very proud to have found a project that is suitable for our level of expe
 
 ## What I learned
 We learned quite a lot about circuits, electricity, the Adruino as a micro-controller and, most importantly, I think each of us will leave here today knowing how to work better in a team.
+
+## What's next for Simon Game
+We're very happy with the functionality of our game. What's next for Simon Game lies in the aesthetics, namely in hiding the wires and making it look more user-friendly.
 
 ## What's next for Simon Game
 We're very happy with the functionality of our game. What's next for Simon Game lies in the aesthetics, namely in hiding the wires and making it look more user-friendly.

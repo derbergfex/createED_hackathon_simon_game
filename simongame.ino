@@ -92,16 +92,20 @@ void loop ()
             // Set gameState to 1. 
             gameState = 1;
             turnOff();
+            // Indicate that first round begins
+            // Leave a delay for player to get ready
             displayDigit(1);
             delay(1500);
         }
     }
-  
+    
+    // Playing game state
     if (gameState == 1)
     {
         gamePlay();
     }
     
+    // Winning state
     if (gameState == 2)
     {
         // You win!! - play winning sound and scroll through leds (winDisplay)3 times followed by lose display once for good transition.
@@ -120,6 +124,7 @@ void loop ()
         gameState = 0;
     }
     
+    // Losing state
     if (gameState == 3)
     {
       // You lose :( - play losing sound and flash leds (loseDisplay)3 times for good transition.
@@ -211,6 +216,7 @@ void gamePlay()
         displayDigit(roundNum + 1);
       }
       
+      // Display game sequence for this round
       displayClue(roundNum);
     
       for (int i = 0; i <= roundNum; i++)
@@ -289,7 +295,7 @@ void setLed(int ledNum)
   }
  }
 
-
+ // Displays the current game sequence
  void displayClue(int roundNum)
  {
     // Turn all lights off.
@@ -321,6 +327,7 @@ boolean waitForInput(int buttonNum)
       delay(250);
 
       // Light up the corresponding led when a button is pressed
+      // And play associated music with the button
       if (buttonNum == 0)
       {
         digitalWrite(ledArray[0], HIGH);
@@ -410,6 +417,7 @@ void displayDigit(int digit)
  
 }
 
+// Turns off all lights
 void turnOff()
 {
   digitalWrite(a,LOW);
@@ -496,7 +504,7 @@ void winning_sound(void)
   tone(buzzer, 494, 500);
 }
 
-
+// Quickly turn on and turn off lights to signal loss
 void loseDisplay()
 {
   digitalWrite(ledArray[0], HIGH);
@@ -510,7 +518,7 @@ void loseDisplay()
   digitalWrite(ledArray[3], LOW);
   delay(200);
 }
-
+// Make a losing sound
 void losing_sound(void)
 {
   Serial.println("losing_sound");

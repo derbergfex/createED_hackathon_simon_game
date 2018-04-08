@@ -25,3 +25,9 @@ We learned quite a lot about circuits, electricity, the Adruino as a micro-contr
 
 ## What's next for Simon Game
 We're very happy with the functionality of our game. What's next for Simon Game lies in the aesthetics, namely in hiding the wires and making it look more user-friendly.
+
+
+## Hackathon Results
+
+Our team worked incredibly hard, and we have been very lucky to win the **Beginner’s prize (FDM Group)**. Here's the prize's brief description:
+        This prize will be given to the beginners team that have tried the hardest whilst at the hackathon and who have learnt the most. It’s all about how much the team has thrown themselves into the challenge and how much you have benefited from this learning experience.

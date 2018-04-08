@@ -2,7 +2,7 @@ int ledArray[] = {12, 9, 5, 2};      // ledArray[0] is green, ledArray[1] is red
 int buttonArray[] = {13, 10, 6, 3};  // buttonArray[0] is green, buttonArray[1] is red, buttonArray[2] is yellow, and buttonArray[3] is blue. 
 int pinCount = 4;                    // Both ledArray and buttonArray have same pinCount --> use this for both buttons and leds.
 int buzzer = 8;
- /* With ledState = 0 meaning the current LED is blue, 1 meaning the current LED is green, 
+/* With ledState = 0 meaning the current LED is blue, 1 meaning the current LED is green, 
  2 meaning the current LED is red and 3 meaning the current LED is yellow. */
 int ledState = 0;
 /* With gameState = 0 meaning the game hasn't started, 

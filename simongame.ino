@@ -25,7 +25,7 @@ int e = A1;  // For displaying segment "e"      //    e   c
 int f = A0;  // For displaying segment "f"      //    - d -
 int g = 11;  // For displaying segment "g"      //   
  
-// Declare functions.
+// Functions' declarations.
 void setLed(int ledNum);
 void displayClue(int roundNum);
 boolean waitForInput(int buttonNum);

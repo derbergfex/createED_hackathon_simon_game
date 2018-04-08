@@ -10,7 +10,7 @@ int ledState = 0;
 1 meaning the user is playing, 2 meaning the user has won and 3 meaning the user has lost. */
 int gameState = 0;
 
-#define NUMBERTOWIN 3                // Number of lights you have to match to win.
+#define NUMBERTOWIN 5               // Number of lights you have to match to win.
 int gameValues[NUMBERTOWIN];
 int roundNum = 0;
 
@@ -37,7 +37,7 @@ void setup ()
 {
   Serial.begin(9600);
   
-  Serial.println("setup");
+  Serial.println("Run setup sequence.");
   
     // Initial pin is zero which corresponds to green, if the pin is less than 4 (pinCount) then add one, which would make the pin number 1 and correspond to red, and so on.
     for(int Pin = 0; Pin < pinCount; Pin++) 
@@ -88,7 +88,7 @@ void loop ()
         // If a button is pressed, we set the game up.
         else
         {
-            Serial.println("button Pressed"); 
+            Serial.println("Button pressed, starting up."); 
             // Turn leds off before starting game --> function setLed() states that if ledNum is <0 led is LOW.
             setLed(-1);
             // Set the round number to zero so you start on the first round.
@@ -121,7 +121,7 @@ void loop ()
         winDisplay();
         winDisplay();
         loseDisplay();
-        Serial.println("winDisplay");
+        Serial.println("Log win.");
         // Delay briefly before running pre_game
         delay (1000);
         turnOff();
@@ -139,7 +139,7 @@ void loop ()
       loseDisplay();
       loseDisplay();
       loseDisplay();
-      Serial.println("loseDisplay");
+      Serial.println("Log lose.");
       // Delay briefly before running pre_game.
       delay (1000);
       turnOff();
@@ -159,7 +159,7 @@ void pre_game()
     // If enough time has elapsed update lights.
     if (ledState == 0)
     {
-      Serial.println("pre green");
+      Serial.println("Load green.");
       setLed(0);
       ledState = 1;
       turnOff();
@@ -168,7 +168,7 @@ void pre_game()
     }
     else if (ledState == 1)
     {
-      Serial.println("pre red");
+      Serial.println("Load red.");
       setLed(1);
       ledState = 2;
       turnOff();
@@ -177,7 +177,7 @@ void pre_game()
     }
     else if (ledState == 2)
     {
-      Serial.println("pre yellow");
+      Serial.println("Load yellow.");
       setLed(2);
       ledState = 3;
       turnOff();
@@ -186,7 +186,7 @@ void pre_game()
     }
     else if (ledState == 3)
     {
-      Serial.println("pre blue");
+      Serial.println("Load blue.");
       setLed(3);
       ledState = 0;
       turnOff();
@@ -201,7 +201,7 @@ void pre_game()
 // Function for while game is playing
 void gamePlay()
 {
-    Serial.println("gamePlay");
+    Serial.println("Run main gameplay sequence.");
     // Pre-load array with random numbers for game
     for ( int i = 0; i < NUMBERTOWIN; i++)
     {
@@ -239,7 +239,7 @@ void gamePlay()
           // Correct input
           if (i == roundNum)
           {
-              Serial.println("Correct");
+              Serial.println("Correct!");
               // check if final round 
               if (roundNum == NUMBERTOWIN - 1)
               {
@@ -251,7 +251,7 @@ void gamePlay()
               }
               else 
               {
-                Serial.println("Continue");
+                Serial.println("Continuing.");
               }
           }
         }
@@ -488,7 +488,7 @@ void winDisplay()
 void winning_sound(void)
 {
   // Play winning celebration
-  Serial.println("buzzer1");
+  Serial.println("Play win buzzer.");
   tone(buzzer, 294, 250);
   delay(200);
   tone(buzzer, 294, 250);
@@ -497,7 +497,7 @@ void winning_sound(void)
   delay(200);
   tone(buzzer, 392, 500);
   delay(500);
-  Serial.println("second 392");
+  Serial.println("Tone buzzer.");
   tone(buzzer, 392, 250);
   delay(200);
   tone(buzzer, 440, 250);
@@ -526,7 +526,7 @@ void loseDisplay()
 // Make a losing sound
 void losing_sound(void)
 {
-  Serial.println("losing_sound");
+  Serial.println("Play lose buzzer.");
   tone(buzzer, 98, 250);
   delay(250);
    tone(buzzer, 93, 250);

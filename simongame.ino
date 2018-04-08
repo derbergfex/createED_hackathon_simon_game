@@ -60,13 +60,13 @@ void setup ()
    randomSeed(analogRead(0));  /*** CREDIT TO Katire Kristoff and Monica Houston's on Arduino Project Hub tutorial is due here. ***/
    
    // Set counter pins to OUTPUT
-   pinMode(a, OUTPUT);  // A
-   pinMode(b, OUTPUT);  // B
-   pinMode(c, OUTPUT);  // C
-   pinMode(d, OUTPUT);  // D
-   pinMode(e, OUTPUT);  // E
-   pinMode(f, OUTPUT);  // F
-   pinMode(g, OUTPUT);  // G
+   pinMode(a, OUTPUT);  // a
+   pinMode(b, OUTPUT);  // b
+   pinMode(c, OUTPUT);  // c
+   pinMode(d, OUTPUT);  // d
+   pinMode(e, OUTPUT);  // e
+   pinMode(f, OUTPUT);  // f
+   pinMode(g, OUTPUT);  // g
  }
 
 void loop () 

@@ -8,20 +8,20 @@ The way the game works is that the user is given a series of buttons and a count
 
 ## How I built it
 After a little research, we came to the decision of implementing the game using an Arduino as we have seen plenty of online support for it. Only two members of the group, including myself, had a little bit of experience with C. So, suffice to say, it was a long process to implement it in the Arduino language (which's very similar to C++). 
-We built it using a large breadboard, a switch button, four push buttons, four LEDs, a speaker, an Adruino Uno, and a bunch of jumper wires.
+We built it using a large breadboard, a switch button, four push buttons, four LEDs, a speaker, an Arduino Uno, and a bunch of jumper wires.
 
 ## Challenges I ran into
 Our main challenge at the beginning was to understand how the circuit would work. It was helpful going to the electronic workshop, which gave us a head start. It took us quite a lot of time to make the breadboard (and the circuit, overall) look as humane as possible.
 
 Another big challenge for us was the code. We found plenty of online help with that, so we were quite fortunate and didn't get stuck there for too long. 
 
-We also had a bit of trouble running out of pins on the Adruino and, in essence, understanding how the Adruino itself works.
+We also had a bit of trouble running out of pins on the Arduino and, in essence, understanding how the Arduino itself works.
 
 ## Accomplishments that I'm proud of
 We are very proud to have found a project that is suitable for our level of experiences, and that we have all managed to learn an awful lot. Everyone had something to do, everyone was excited and showed tenaciousness. The statement, "I didn't expect us to get that far" that kept repeating throughout the hack kept us pushing further for more functionalities. 
 
 ## What I learned
-We learned quite a lot about circuits, electricity, the Adruino as a micro-controller and, most importantly, I think each of us will leave here today knowing how to work better in a team.
+We learned quite a lot about circuits, electricity, the Arduino as a micro-controller and, most importantly, I think each of us will leave here today knowing how to work better in a team.
 
 ## What's next for Simon Game
 We're very happy with the functionality of our game. What's next for Simon Game lies in the aesthetics, namely in hiding the wires and making it look more user-friendly.

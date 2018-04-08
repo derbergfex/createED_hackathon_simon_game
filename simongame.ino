@@ -56,13 +56,13 @@ void setup ()
    randomSeed(analogRead(0));
    
    // Set counter pins to OUTPUT
-   pinMode(a, OUTPUT);  //A
-   pinMode(b, OUTPUT);  //B
-   pinMode(c, OUTPUT);  //C
-   pinMode(d, OUTPUT);  //D
-   pinMode(e, OUTPUT);  //E
-   pinMode(f, OUTPUT);  //F
-   pinMode(g, OUTPUT);  //G
+   pinMode(a, OUTPUT);  // A
+   pinMode(b, OUTPUT);  // B
+   pinMode(c, OUTPUT);  // C
+   pinMode(d, OUTPUT);  // D
+   pinMode(e, OUTPUT);  // E
+   pinMode(f, OUTPUT);  // F
+   pinMode(g, OUTPUT);  // G
  }
 
 void loop () 

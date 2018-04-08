@@ -4,6 +4,8 @@ int pinCount = 4;                    // Both ledArray and buttonArray have same 
 int buzzer = 8;
  
 int ledState = 0;
+/* With gameState = 0 meaning the game hasn't started, 
+1 meaning the user is playing, 2 meaning the user has won and 3 meaning the user has lost. */
 int gameState = 0;
 
 #define NUMBERTOWIN 3                // Number of lights you have to match to win.

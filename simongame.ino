@@ -14,13 +14,13 @@ unsigned long previousMillis = 0;    // Need this for pre-game state for flashin
 unsigned long interval1 = 500;       // Need this for time between blinks.
 
 // 7 segments to represent level
-int a = A5;  //For displaying segment "a"
-int b = A4;  //For displaying segment "b"
-int c = A3;  //For displaying segment "c"
-int d = A2;  //For displaying segment "d"
-int e = A1;  //For displaying segment "e"
-int f = A0;  //For displaying segment "f"
-int g = 11;  //For displaying segment "g"
+int a = A5;  //For displaying segment "a"     
+int b = A4;  //For displaying segment "b"      //    - a -
+int c = A3;  //For displaying segment "c"      //    f   b
+int d = A2;  //For displaying segment "d"      //    - g -
+int e = A1;  //For displaying segment "e"      //    e   c     
+int f = A0;  //For displaying segment "f"      //    - d -
+int g = 11;  //For displaying segment "g"      //   
  
 // Declare functions.
 void setLed(int ledNum);
@@ -378,7 +378,7 @@ boolean waitForInput(int buttonNum)
         Serial.println("3 Pressed");
         return true;
       }
-      else
+      else 
       {
         return false;
       }

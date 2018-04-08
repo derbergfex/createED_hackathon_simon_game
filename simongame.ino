@@ -26,11 +26,11 @@ int f = A0;  // For displaying segment "f"      //    - d -
 int g = 11;  // For displaying segment "g"      //   
  
 // Functions' declarations.
-void setLed(int ledNum);
-void displayClue(int roundNum);
-boolean waitForInput(int buttonNum);
-void displayDigit(int digit);
-void turnOff();
+void setLed(int ledNum);               // Turns on the LED, ledNum.
+void displayClue(int roundNum);        // Displays the current round's sequence.
+boolean waitForInput(int buttonNum);   // Checks if the user entered the correct, current input of the current round.
+void displayDigit(int digit);          // Displays a signle digit (1 to 9) on the 7-sequence display segment.
+void turnOff();                        // Turns off all the segments of the 7-sequence display segment.
  
 void setup () 
 {

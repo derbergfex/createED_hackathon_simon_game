@@ -48,16 +48,16 @@ void setup ()
       
     for(int Pin = 0; Pin < pinCount; Pin++)
     {
-      // Set all buttons to input using pullup resistor built into board 
-      // We added 1k resistors to the buttons.
+      // Set all buttons input using pullup resistors, that are built into board. 
+      // Additionally, we added 1k-ohm resistors to the buttons.
       pinMode(buttonArray[Pin], INPUT_PULLUP);
     }
    
-   // If analog input pin 0 is unconnected.
+   // If the analog-input pin is 0, it is unconnected.
    // Random analog noise will cause the call to randomSeed() to generate.
    // Different seed numbers each time the sketch runs.
    // randomSeed() will shuffle the random function that we call during gameplay.
-   randomSeed(analogRead(0));
+   randomSeed(analogRead(0));  /*** CREDIT TO Katire Kristoff and Monica Houston's on Arduino Project Hub tutorial is due here. ***/
    
    // Set counter pins to OUTPUT
    pinMode(a, OUTPUT);  // A

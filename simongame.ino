@@ -1,7 +1,8 @@
 int ledArray[] = {12, 9, 5, 2};      // ledArray[0] is green, ledArray[1] is red, ledArray[2] is yellow, and ledArray[3] is blue. 
 int buttonArray[] = {13, 10, 6, 3};  // buttonArray[0] is green, buttonArray[1] is red, buttonArray[2] is yellow, and buttonArray[3] is blue. 
 int pinCount = 4;                    // Both ledArray and buttonArray have same pinCount --> use this for both buttons and leds.
-int buzzer = 8;
+int buzzer = 8;                      // 8 is the pin the buzzer is connected to.
+
 /* With ledState = 0 meaning the current LED is blue, 1 meaning the current LED is green, 
  2 meaning the current LED is red and 3 meaning the current LED is yellow. */
 int ledState = 0;
@@ -41,7 +42,7 @@ void setup ()
     // Initial pin is zero which corresponds to green, if the pin is less than 4 (pinCount) then add one, which would make the pin number 1 and correspond to red, and so on.
     for(int Pin = 0; Pin < pinCount; Pin++) 
     {
-      // Set all leds to output.
+      // Set all LEDs to output.
       pinMode(ledArray[Pin], OUTPUT);
     }
       

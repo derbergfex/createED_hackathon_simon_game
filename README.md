@@ -29,5 +29,5 @@ We're very happy with the functionality of our game. What's next for Simon Game 
 
 ## Hackathon Results
 
-Our team worked incredibly hard, and we have been very lucky to win the **Beginner’s prize (FDM Group)**. Here's the prize's brief description:
+Our team worked incredibly hard, and we have been very lucky to win the **Beginner’s prize (awarded by FDM Group)**. Here's the prize's brief description:
 * This prize will be given to the beginners team that have tried the hardest whilst at the hackathon and who have learnt the most. It’s all about how much the team has thrown themselves into the challenge and how much you have benefited from this learning experience.

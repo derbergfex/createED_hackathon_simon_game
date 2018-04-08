@@ -25,6 +25,3 @@ We learned quite a lot about circuits, electricity, the Adruino as a micro-contr
 
 ## What's next for Simon Game
 We're very happy with the functionality of our game. What's next for Simon Game lies in the aesthetics, namely in hiding the wires and making it look more user-friendly.
-
-## What's next for Simon Game
-We're very happy with the functionality of our game. What's next for Simon Game lies in the aesthetics, namely in hiding the wires and making it look more user-friendly.

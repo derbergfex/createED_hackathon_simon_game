@@ -74,17 +74,18 @@ void loop ()
   
     if (gameState == 0)
     {
+         // digitalRead ouputs HIGH or LOW. A button will read LOW when pressed and HIGH when not pressed.
          int button0 = digitalRead(buttonArray[0]);
          int button1 = digitalRead(buttonArray[1]);  
          int button2 = digitalRead(buttonArray[2]); 
          int button3 = digitalRead(buttonArray[3]); 
          
-        // If no buttons are pressed (since button input is pullup: i.e will read LOW when pressed and HIGH when not pressed) we show all buttons pressed, then play pre_game.
+        // When no buttons are pressed, play pre_game.
         if (button0 && button1 && button2 && button3)
         {
             pre_game();
         }
-        // If a button is pressed set up for the game.
+        // If a button is pressed, we set the game up.
         else
         {
             Serial.println("button Pressed"); 
